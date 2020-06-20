@@ -16,6 +16,11 @@ header {
   color: #fff;
 }
 
+.logo a{
+  color: #fff;
+  text-decoration: none;
+}
+
 .buscador {
   width: 50%;
   display: flex;
@@ -32,7 +37,7 @@ header {
 }
 
 .buscador button {
-  background: #3172d8;
+  background: #0275d8;
   color: #fff;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -52,37 +57,40 @@ header {
   margin-left: 20px;
 }
 
-#principal {
+#principal,
+#producto_detalle,
+#login {
   width: 1100px;
   margin: 0 auto;
   background-color: #f7f7f7;
   padding: 20px;
 }
 
-.lista {
+/*.lista {
   display: flex;
-}
+}*/
 
-.lista .caja:first-child {
-  margin-left: 0;
+.lista .caja:nth-child(5n) {
+  margin-right: 0;
 }
 
 .caja {
-  width: 20%;
+  display: inline-block;
+  width: calc(20% - 30px);
   border: 1px solid #eee;
-  margin-left: 10px;
-  background-color: #FFF;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  background-color: #fff;
   padding: 10px;
   font-weight: bold;
   text-align: center;
 }
 
-.caja a{  
+.caja a {
   text-decoration: none;
 }
 
-
-.foto img{
+.foto img {
   width: 100%;
 }
 
@@ -102,6 +110,99 @@ footer {
   background-color: #eee;
   font-weight: 600;
 }
+
+/*Estilos de producto_detalle*/
+
+.ruta {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;    
+  color: #3d3d3d;
+}
+
+.ruta a{  
+  color: #3d3d3d;
+  text-decoration: none;
+}
+
+.ruta a:hover{
+  color: #3172D8;
+}
+
+.caja_producto {
+  display: flex;
+}
+
+.imagen img {
+  width: 100%;
+}
+
+.imagen {
+  text-align: center;
+  background: #fff;
+  padding: 20px 10px;
+  border-radius: 6px;
+  margin-right: 40px;  
+  width: 50%;
+}
+
+.datos .precio {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.datos .controles {
+  display: flex;
+  margin-top: 20px;
+}
+
+.datos .cajaCantidad {
+  margin-right: 10px;
+  padding: 0 10px;
+  font-weight: bold;
+  font-size: 16px;
+  width: 100px;
+}
+
+.datos .btnCarrito {
+  background-color: #3172d8;
+  color: #fff;
+  font-size: 20px;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 6px;
+  width: 100%;
+}
+
+/*Estilos de Login*/
+
+.input_login{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 14px;
+  padding: 10px;
+  font-size: 14px;
+  width: 300px;
+}
+
+.btnIngresar{
+  background-color: #0275d8;
+  color: #fff;
+  padding: 10px;
+  border: 7px solid #0275d8;
+  border-radius: 6px;  
+  font-size: 18px;
+  width: 320px;
+}
+
+#login{
+  text-align: center;
+}
+
+
+
+
 
 @media (max-width: 767px) {
   #cabecera {
